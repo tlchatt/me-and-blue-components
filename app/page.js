@@ -1,22 +1,5 @@
 'use client'
-import { createPortal } from 'react-dom';
-import React, { useState, useEffect } from 'react';
-import { Contact } from './ContactForm';
-export default function Page({ section, appearance, branding, handleContactToggle, contactOpen }) {
-    const [contactForm, setContactForm] = useState(null);
-    useEffect(() => {
-        console.log('useEffect')
-        var contactForm = document.querySelector ('#technologic-contact'); 
-        console.log('contactForm' ,)
-        if (contactForm){
-            console.log('if (contactForm){')
-            setContactForm(contactForm)
-        }
-      }, []);
 
-      return(<Contact/>)
-
-
-
+export default function Page() {
 
 }
