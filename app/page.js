@@ -13,6 +13,7 @@ export default function Page({ section, appearance, branding, handleContactToggl
         }
       }, []);
 
+      return(<p>test</p>)
       {contactForm !== null && createPortal(
         <p>Hello from React!</p>,
         contactForm
