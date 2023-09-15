@@ -15,7 +15,7 @@ export default function Page({ section, appearance, branding, handleContactToggl
         }
       }, []);
 
-      return(console.log(test))
+      return(<p>test {console.log(test)}</p>)
       {contactForm !== null && createPortal(
         <p>Hello from React!</p>,
         contactForm
