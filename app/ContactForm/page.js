@@ -2,8 +2,9 @@
 import React, { useState } from 'react';
 import styles from './page.module.css'
 import { sendEmail } from '../../lib/SubmitForm.js'
-import { H3, P, Button } from '../../components/MicroComponents';
+import { P, Button } from '../../components/MicroComponents';
 import { Person, Phone, Email, Message, Airplane, ThumbsUp, ThumbsDown, Close } from '../../lib/icon.js'
+
 const appearance = {
   "colorSchemes": {
     "PrimaryBackground": "rgba(255,255,255,.75) ",
@@ -21,7 +22,7 @@ const branding = {
   "Settings": {
     "Fax": "",
     "Url": "https://pelhamchiro.net/",
-    "Email": "greggorywiley@tlchatt.com",
+    "Email": "booking@appalachiananglers.com",
     "SiteTitle": "Appalachian Anglers",
     "ContactButtonText": "Send Message"
   }
@@ -29,7 +30,9 @@ const branding = {
 const section = {
   scheme: 'primary'
 }
+
 export default function Contact() {
+  
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
   const [failed, setFailed] = useState(false);
@@ -48,7 +51,6 @@ export default function Contact() {
       setSending(true);
       var res = await sendEmail(branding, formInfo)
       setTimeout(() => {
-        console.log('timeout')
         if (res) {
           console.log('res', res)
           setSending(false);
@@ -113,8 +115,8 @@ export default function Contact() {
         <P scheme={scheme} content={note} appearance={appearance} classNames={styles.note} />
 
       </form>
-    </div>
 
+    </div>
   )
   function ContactFormItem({ id, content, type, Icon }) {
     const [value, setValue] = useState('');
