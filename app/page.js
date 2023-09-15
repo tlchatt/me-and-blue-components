@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import React, { useState, useEffect } from 'react';
 
 export default function Page({ section, appearance, branding, handleContactToggle, contactOpen }) {
+    console.log('Page')
     const [contactForm, setContactForm] = useState(null);
     useEffect(() => {
         console.log('useEffect')
