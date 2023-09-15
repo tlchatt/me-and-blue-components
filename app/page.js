@@ -5,8 +5,10 @@ import React, { useState, useEffect } from 'react';
 export default function Page({ section, appearance, branding, handleContactToggle, contactOpen }) {
     const [contactForm, setContactForm] = useState(null);
     useEffect(() => {
+        console.log('useEffect')
         var contactForm = document.querySelector ('#technologic-contact'); 
         if (contactForm){
+            console.log('if (contactForm){')
             setContactForm(contactForm)
         }
       }, []);
