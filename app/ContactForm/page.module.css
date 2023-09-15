@@ -112,10 +112,10 @@
     border: 0;
     outline: unset;
     font-size: 18px;
-    line-Height: 25px;
+    line-Height: 30px;
     @media (min-width: 600px) {
         font-size: 20px;
-        line-Height: 28px
+        line-Height: 32px
     }
 }
 .sendIt {
