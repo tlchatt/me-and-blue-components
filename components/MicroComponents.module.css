@@ -1,0 +1,177 @@
+  .H1 {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+
+      @media (min-width: 600px) {
+          font-size: 34px;
+          line-Height: 41px;
+      }
+
+      @media (min-width: 900px) {
+          font-size: 41px;
+          line-height: 49px;
+      }
+  }
+
+  .H2 {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 39px;
+
+      @media (min-width: 600px) {
+          font-size: 31px;
+          line-height: 40px;
+      }
+
+      @media (min-width: 900px) {
+          font-size: 37px;
+          line-height: 48px;
+      }
+  }
+
+  .H3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 34px;
+
+      @media (min-width: 600px) {
+          font-size: 29px;
+          line-height: 41px;
+      }
+
+      @media (min-width: 900px) {
+          font-size: 35px;
+          line-height: 49px;
+      }
+  }
+
+  .H4 {
+      font-weight: 700;
+      font-size: 22px;
+      line-Height: 33px;
+
+      @media (min-width: 600px) {
+          font-size: 26px;
+          line-Height: 39px;
+      }
+
+      @media (min-width: 900px) {
+          font-size: 31px;
+          line-Height: 46px;
+      }
+  }
+
+  .H5 {
+      font-weight: 700;
+      font-size: 20px;
+      line-Height: 30px;
+
+      @media (min-width: 600px) {
+          font-size: 24px;
+          line-Height: 36px;
+      }
+
+      @media (min-width: 900px) {
+          font-size: 29px;
+          line-Height: 43px;
+      }
+  }
+
+  .P {
+      font-size: 18px;
+      line-Height: 27px;
+
+      @media (min-width: 600px) {
+          font-size: 20px;
+          line-Height: 28px
+      }
+
+      line-Height: 28px;
+      font-weight: 500
+  }
+
+  .Button {
+      font-weight: 600;
+      font-size: 20px;
+      margin-top: 24px;
+      margin-bottom: 24px;
+      padding: 8px 32px;
+      margin-left: auto;
+      margin-right: auto;
+      cursor: pointer;
+
+      @media (min-width: 600px) {
+          font-size: 24px;
+          width: 55%;
+          margin-top: 32px;
+          margin-bottom: 32px;
+      }
+
+      text-align: center;
+      width: 75%;
+
+  }
+
+  .ButtonA {
+      text-decoration: none;
+  }
+
+  .HR {
+      margin: 24px;
+
+      @media (min-width: 600px) {
+          margin: 32px;
+      }
+  }
+
+  .imageStyle {
+      position: relative;
+      width: 90%;
+      margin: 16px auto;
+
+      @media (min-width: 600px) {
+          width: 80%;
+          margin: 32px auto;
+      }
+
+      @media (min-width: 900px) {
+          width: 90%;
+          margin: 48px auto;
+      }
+
+      @media (min-width: 1200px) {
+          width: 60%;
+          margin: 64px auto;
+      }
+
+      @media (min-width: 1536px) {
+          width: 50%;
+          margin: 64px auto;
+      }
+
+  }
+
+  .UL {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+
+      @media (min-width: 900px) {
+          width: 75%;
+          margin: 0 auto;
+      }
+  }
+
+  .LI {
+      font-size: '18px!important';
+      line-height: '27px!important';
+      letter-spacing: '0.25px';
+  }
+
+  .link {
+      text-decoration: underline;
+      text-underline-offset: 7px;
+      cursor: pointer;
+  }
