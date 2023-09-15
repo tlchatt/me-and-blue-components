@@ -100,9 +100,7 @@ export default function Contact() {
         </div>
       }
 
-      <div className={styles.Title}>
-        <H3 scheme={scheme} content={'Get in Touch'} appearance={appearance} />
-      </div>
+    
       <form id="Contact-Form" className={styles.Form}>
         <ContactFormItem id="name" content="Name" type="text" Icon={Person} />
         <ContactFormItem id="phone" content="Number" type="tel" Icon={Phone} />
