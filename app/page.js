@@ -7,6 +7,7 @@ export default function Page({ section, appearance, branding, handleContactToggl
     useEffect(() => {
         console.log('useEffect')
         var contactForm = document.querySelector ('#technologic-contact'); 
+        console.log('contactForm' ,contactForm)
         if (contactForm){
             console.log('if (contactForm){')
             setContactForm(contactForm)
