@@ -1,7 +1,7 @@
 import Script from 'next/script'
 const analytics_tag='G-M3L9PPY561'
 export default function RootLayout({ children }) {
-  
+   { cookie_flags: 'SameSite=None;Secure' }
   return (
     <html lang="en">
     <Script
@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${analytics_tag}');
+            gtag('config', '${analytics_tag}', { cookie_flags: 'SameSite=None;Secure' });
           `}
         </Script>
       <body >{children}</body>
