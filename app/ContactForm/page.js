@@ -32,7 +32,9 @@ const section = {
 }
 
 export default function Contact() {
-  
+  parent.postMessage(
+    "Contact_Submit",
+    "http://parent.domain.com");
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
   const [failed, setFailed] = useState(false);
