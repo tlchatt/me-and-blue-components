@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from './page.module.css'
 import { sendEmail } from '../../lib/SubmitForm.js'
 import { P, Button } from '../../components/MicroComponents';
@@ -32,16 +32,31 @@ const section = {
 }
 
 export default function Contact() {
-  useEffect(() => {// for better lighthouse score dynamically load in real google map
-    console.log("Use Effect FIring")
-      window.parent.postMessage(
-        {
-          type: 'Contact_Submit',
-          message: true,
-        },'*'
-      )
-  }, []);
+  /**
+   * Implementation as component in another site.
+   * <iframe src="https://component.tlchatt.com/ContactForm" style="height: 700px; width:
+   100%;border: 0;" id="technologic-contact"></iframe>
+<script>
 
+  window.addEventListener("message", handleMessage);
+
+function handleMessage(event) {
+  if(event.origin != 'https://appalachiananglers.com' ){
+      console.log("Received a message from " + event.origin + ".");
+    if (event.data.type == 'Contact_Submit'){
+       gtag('event', 'Contact_Submit');
+    }
+  // When one window sends a message, or data, to another window via
+  // `parent.postMessage()`, the message (the first argument) in the
+  // `parent.postMessage()` call is accessible via `event.data` here.
+  // Do something with the data.
+  console.log(event.data);
+  }
+
+}
+</script>
+   * 
+   */
 
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
@@ -112,7 +127,7 @@ export default function Contact() {
         </div>
       }
 
-    
+
       <form id="Contact-Form" className={styles.Form}>
         <ContactFormItem id="name" content="Name" type="text" Icon={Person} />
         <ContactFormItem id="phone" content="Number" type="tel" Icon={Phone} />
