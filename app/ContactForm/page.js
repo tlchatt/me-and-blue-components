@@ -36,8 +36,8 @@ export default function Contact() {
     console.log("Use Effect FIring")
       window.parent.postMessage(
         {
-          type: 'button-click',
-          message: 'Test Message ',
+          type: 'Contact_Submit',
+          message: true,
         },'*'
       )
   }, []);
