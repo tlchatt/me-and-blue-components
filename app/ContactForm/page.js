@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './page.module.css'
 import { sendEmail } from '../../lib/SubmitForm.js'
 import { P, Button } from '../../components/MicroComponents';
@@ -32,9 +32,17 @@ const section = {
 }
 
 export default function Contact() {
-  parent.postMessage(
-    "Contact_Submit",
-    "http://parent.domain.com");
+  useEffect(() => {// for better lighthouse score dynamically load in real google map
+    window.parent.postMessage(
+      "Contact_Submit",window.location.origin
+      );
+
+
+  }, []);
+  useEffect(() => {
+
+  }, []);
+
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
   const [failed, setFailed] = useState(false);
