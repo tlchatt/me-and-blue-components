@@ -33,15 +33,15 @@ const section = {
 
 export default function Contact() {
   useEffect(() => {// for better lighthouse score dynamically load in real google map
-    window.parent.postMessage(
-      "Contact_Submit",window.location.origin
-      );
-
-
+    console.log("Use Effect FIring")
+      window.parent.postMessage(
+        {
+          type: 'button-click',
+          message: 'Test Message ',
+        },'*'
+      )
   }, []);
-  useEffect(() => {
 
-  }, []);
 
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
