@@ -1,10 +1,10 @@
 import Script from 'next/script'
-const analytics_tag='G-M3L9PPY561'
+
 export default function RootLayout({ children }) {
-   { cookie_flags: 'SameSite=None;Secure' }
-  return (
-    <html lang="en">
-    <Script
+/**
+ * Currently can not fire Ga on this side, does not log events so passing via Iframe Parent
+ * const analytics_tag='G-M3L9PPY561'
+ *     <Script
       async
       src={`https://www.googletagmanager.com/gtag/js?id=${analytics_tag}`}
     />
@@ -16,6 +16,9 @@ export default function RootLayout({ children }) {
             gtag('config', '${analytics_tag}', { cookie_flags: 'SameSite=None;Secure' });
           `}
         </Script>
+ */
+  return (
+    <html lang="en">
       <body >{children}</body>
     </html>
   )
