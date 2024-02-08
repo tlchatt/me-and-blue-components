@@ -1,0 +1,70 @@
+
+    .FeaturedText {
+      width:100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      @media (min-width: 600px) {
+        width:75%
+      }
+    }
+    .FeaturedTextInner {
+        display: grid;
+        align-content: center;
+        padding: 8px 16px;
+        @media (min-width: 600px) {
+            padding: 16px 32px;
+        }
+        @media (min-width: 1200px) {
+            padding: 32px 64px;
+        }
+    }
+    .H2 {
+        font-size: 32px;
+        line-height: 38px;// *1.3 font
+        font-weight:600;
+        margin-top:0;
+        margin-bottom:0;
+        //margin: 32px 32px 0 32px;
+        letter-spacing:.75px;
+        text-align:left;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        @media (min-width: 600px) {
+            font-size: 46px;
+            line-height: 55px;
+            flex-basis: 60%;
+        }
+    }
+    .H3{
+      text-align:left;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      margin-top:0;
+      margin-bottom:0;
+     // margin:8px 32px 0 32px;
+     // color: textColor ISSUE
+        font-size: 28px;
+        line-Height: 34px;
+      @media (min-width: 600px) {
+        font-size: 30px;
+        line-height: 36px;
+        //margin:16px 64px 0 64px;
+        flex-basis: 60%;
+      }
+      font-weight:400
+    }
+    .button {
+      float: left;
+      width:70%;
+      @media (min-width: 600px) {
+            width:50%;
+     }   
+      display: block;
+      //font-size: 1em;
+     // font-weight:700;
+      text-align:left;
+     // margin:8px 32px 0 32px;
+      @media (min-width: 600px) {
+        //  font-size: 1.5em;
+      //    margin:16px 64px 0 64px;
+      }
+    }

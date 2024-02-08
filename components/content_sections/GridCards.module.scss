@@ -1,0 +1,51 @@
+.GridCards{
+    display:grid;
+    grid-template-columns:repeat(1,minmax(0,1fr));
+    @media (min-width: 600px) {
+        grid-template-columns:repeat(3,minmax(0,1fr));
+    }
+    gap: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .GridCard{
+    display: grid;
+    grid-template-rows: auto;
+    align-items:center;
+    justify-items:center;
+    font-size:.75em;
+    
+    padding: 8px 16px;
+    @media (min-width: 600px) {
+       //     padding: 16px 32px;
+        grid-template-rows: 2.85fr 7fr
+    }
+    @media (min-width: 1200px) {
+       //    padding: 32px 64px;
+    }
+  }
+  .Headline{
+
+    //border-bottom:`1px solid ${textColor}`;
+  }
+  .Content{
+
+    align-self:start;
+  }
+  .Title{
+ 
+    //color:textColor
+    font-size: 22px!important;
+    line-height: 30px!important;
+    margin:0
+
+
+  }
+  .P{
+    font-size: 18px!important;
+    line-height: 27px!important;
+    letter-spacing: 0.25px;
+    margin:0;
+   // color:textColor;
+  }

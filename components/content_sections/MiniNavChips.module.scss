@@ -1,0 +1,50 @@
+/*
+    @media (min-width: 600px) {
+        xs; extra-small: 0px
+        sm; small: 600px
+        md; medium: 900px
+        lg; large: 1200px
+        xl; extra-large: 1536px
+    */
+.MiniNavChips {
+    width: 100%;
+    margin:0;
+    padding:16px;
+    @media (min-width: 600px) {
+        padding:32px;
+    }
+
+}
+.chip {
+    padding: 5px 8px;
+    margin:3px;
+    display:grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content:start;
+    border-radius: 16px;
+}
+.svg {
+    height: 20px;
+    padding-right:5px;
+}
+.navChipText {
+    font-size: 12px;
+    line-height:18px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin:0;
+}
+
+
+
+.linkItem {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 16px;
+    height: fit-content;
+}
+
+

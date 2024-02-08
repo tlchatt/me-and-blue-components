@@ -1,0 +1,43 @@
+.ActionBanner{
+    display:grid!important;
+    grid-template-columns:80% 20%!important;
+    margin: 16px 0!important;
+    @media (min-width: 600px) {
+      grid-template-columns:90% 10%!important;
+        margin: 32px 0!important;
+    }
+    @media (min-width: 900px) {
+        margin: 64px 0!important;
+    }
+  }
+  .H2{
+    //color:textColor,
+    text-align: right!important;
+    font-size: 24px!important;
+    line-height: 30px!important;
+    letter-spacing: 0.25px!important;
+    font-weight:400!important;
+  }
+  .H3{
+    font-size: 20px!important;
+    line-height: 27px!important;
+    letter-spacing: 0.25px!important;
+    //color:textColor,
+    text-align: right!important;
+    font-weight:400!important;
+  }
+  .Body{
+    text-decoration:none!important;
+    padding: 8px!important;
+  }
+  .Action{
+    margin:7px 7px 7px 0px!important;
+    display:grid!important;
+    grid-template-columns:auto!important;
+    text-decoration:none!important;
+  }
+  .Icon{
+    align-self:center!important;
+    justify-self:center!important;
+    font-size:48px!important;
+  }

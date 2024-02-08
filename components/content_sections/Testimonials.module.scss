@@ -1,0 +1,106 @@
+.testimonials{
+    display:grid;
+    grid-auto-rows: auto;
+    //border:`2px solid ${hexToRGB(borderColor; .25)}`;
+    box-shadow: 0px 0px 4px 1px rgb(0 0 0 / 19%);
+    grid-template-columns: 100%;
+    justify-content: center;
+
+    //background:bgcolor
+};
+.testimonialsInner{
+    display: grid;
+    align-items: center;
+    justify-items: stretch;
+    padding: 0px 16px 8px 16px;
+    @media (min-width: 600px) {
+        padding: 0px 32px 16px 32px;
+    }
+    @media (min-width: 1200px) {
+        padding: 0px 64px 32px 64px;
+    }
+}   
+.Headlines{
+    display:grid;
+    justify-items:center;
+    align-items:center;
+    margin: 16px 24px 0 24px !important;
+    @media (min-width: 600px) {
+        margin:  32px 32px 0 32px !important;
+    }
+}
+.Content{
+    margin: 32px;
+    margin: 16px 24px 0 24px !important;
+    @media (min-width: 600px) {
+        margin:  32px 32px 0 32px !important;
+    }
+    grid-template-rows: 2fr 1fr;
+    @media (min-width: 600px) {
+        grid-template-rows: unset;
+        grid-template-columns:65% 35%;
+    };
+    align-content:center;
+}
+.ContentItem{
+    display:grid;
+    grid-template-rows: auto;
+    align-content:end;
+}
+.ContentSide{
+    grid-template-rows: auto;
+    display:grid;
+    align-items: center;
+    justify-items: stretch;
+    padding:8px;
+    @media (min-width: 600px) {
+      padding: 16px;
+    };
+    @media (min-width: 1200px) {
+      padding:32px;
+    };
+}
+.Title{
+    margin:0!important;
+    padding:0!important;
+    font-size: 28px!important;
+    line-height: 42px!important;
+    letter-spacing: 0.25px;
+    @media (min-width: 600px) {
+        font-size: 32px!important;
+        line-height: 48px!important;
+    };
+  //  color:textColor;
+}
+.SubTitle{
+    margin: 0 0 16px 0!important;
+    padding:0 !important;
+    font-size: 25px!important;
+    line-height: 37.5px!important;
+    letter-spacing: 0.25px;
+    @media (min-width: 600px) {
+        font-size: 30px!important;
+        line-height: 45px!important;
+    };
+    font-weight:"400";
+  //  color:textColor;
+}
+.ParagraphText{
+    margin: 0;
+    padding:0 !important;
+    font-size: 18px!important;
+    line-height: 27px!important;
+    letter-spacing: 0.25px;
+   // color:textColor;
+}
+
+.Author{
+    display:inline;
+    padding:0 !important;
+    margin: 0 0 32px 0!important;
+    font-size: 18px!important;
+    line-height: 27px!important;
+    letter-spacing: 0.25px;
+    justify-self: end;
+    //color:textColor;
+}

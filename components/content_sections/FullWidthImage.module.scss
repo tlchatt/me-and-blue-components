@@ -1,0 +1,26 @@
+.imageStyle {
+    position: relative;
+    width: 100%;
+    padding: 16px 0;
+
+    @media (min-width: 600px) {
+        width: 100%;
+        padding: 32px 0;
+    }
+
+    @media (min-width: 900px) {
+        width: 100%;
+        padding: 48px 0;
+    }
+
+    @media (min-width: 1200px) {
+         width: 100%;
+        padding: 64px 0;
+    }
+
+    @media (min-width: 1536px) {
+        width: 100%;
+        padding: 64px 0;
+    }
+
+}

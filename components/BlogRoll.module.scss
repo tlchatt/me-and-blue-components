@@ -1,0 +1,68 @@
+
+    /*
+    @media (min-width: 600px) {
+        xs; extra-small: 0px
+        sm; small: 600px
+        md; medium: 900px
+        lg; large: 1200px
+        xl; extra-large: 1536px
+    */
+
+    .blogRoll {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        margin:-1px 0;
+    }
+    .blogRollInner {
+        display: grid;
+        align-items: center;
+        justify-items: stretch;
+        padding: 8px 16px;
+        @media (min-width: 600px) {
+            padding: 16px 32px;
+        }
+        @media (min-width: 1200px) {
+            padding: 32px 64px;
+        }
+    }
+    .Button {
+        place-self: center;
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center
+    }
+    .buttonStyle {
+        margin-bottom: 2rem;
+        padding: 32px;
+        box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        align-self: center;
+        padding: 16px;
+        display:block;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none!important;
+    }
+    .textblock {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
+    .textblockInner {
+        display: grid;
+        align-items: center;
+        justify-items: stretch;
+        padding: 0px 16px 8px 16px;
+        @media (min-width: 600px) {
+            padding: 0px 32px 16px 32px;
+        }
+        @media (min-width: 1200px) {
+            padding: 0px 64px 32px 64px;
+        }
+    }
+    .link {
+        text-decoration: underline;
+        text-decoration-color:initial;
+        text-underline-offset:2px;
+        cursor: pointer;
+    }

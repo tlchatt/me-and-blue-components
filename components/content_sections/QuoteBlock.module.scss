@@ -1,0 +1,39 @@
+
+.QuoteBlockItemWrapperOuter {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: right;
+    align-items: center;
+}
+
+.quotemark {
+    padding: 16px;
+    height: 32px;
+    width: 32px;
+
+    @media (min-width: 900px) {
+        padding: 32px;
+        height: 64px;
+        width: 64px;
+    }
+}
+
+.QuoteBlockText {
+    padding-left: 16px;
+
+    @media (min-width: 900px) {
+        padding-left: 32px;
+    }
+}
+
+.quotemarkStart {
+    justify-self: right;
+    align-self: start;
+    margin-top: -10%;
+}
+
+.quotemarkEnd {
+    justify-self: left;
+    align-self: end;
+    margin-bottom: -10%;
+}

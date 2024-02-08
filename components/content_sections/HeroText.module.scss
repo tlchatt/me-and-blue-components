@@ -1,0 +1,40 @@
+
+    .HeroText {
+        display: grid;
+        position: relative;
+        padding: 8px 0;
+        width: 90%;
+        margin-bottom: 1rem;
+        place-items: center;
+        @media (min-width: 1200px) {
+          padding: 16px 8px;
+            width: 60%;
+          }
+    }
+    .H1{
+      text-align:left ;
+      text-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+      margin: 8px 16px;
+      font-weight: 700!important;
+      font-size: 22px!important;
+      line-height: 22px!important;
+      @media (min-width: 600px) {
+        margin: 8px 16px;
+        justify-self: center;
+      }
+    }
+    .H2{
+      text-align:left ;
+      text-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+      margin: 8px 16px;
+      font-weight: 700!important;
+      font-size: 20px!important;
+      line-height: 20px!important;
+      
+      @media (min-width: 600px) {
+        justify-self: center;
+        margin: 8px 16px;
+
+      }
+    }
+

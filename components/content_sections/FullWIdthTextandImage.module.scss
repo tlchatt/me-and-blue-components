@@ -1,0 +1,55 @@
+
+    .FullWidthTextandImage {
+        display: grid;
+        grid-auto-rows: auto;
+        align-content: center;
+    }
+    .Hr {
+        width: 100%
+    }
+    .ContentSide {
+        display: grid;
+
+        padding: 8px 16px;
+        @media (min-width: 600px) {
+            padding: 16px 32px;
+        }
+        @media (min-width: 1200px) {
+            padding: 32px 64px;
+        }
+    }
+    .ContentSideGridItem {
+        display: grid;
+        width: 100%;
+    }
+    .ButtonStyle {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .ParagraphText {
+        text-align: left;
+        margin: 32px 0 0 0 !important;
+        padding: 0 !important;
+    }
+    .Title {
+        text-align: center;
+        margin: 32px 0 0 0 !important;
+    }
+    .SubTitle {
+        text-align: center;
+        margin: 32px 0 0 0 !important;
+        padding: 0 !important;
+        font-size: 30px!important;
+        line-height: 45px!important;
+        letter-spacing: 0.25px;
+    }
+    .ImageSide {
+        @media (min-width: 900px) {
+            order:unset;
+        }
+        order:1;
+        position: relative;
+        overflow: hidden;
+    }
+

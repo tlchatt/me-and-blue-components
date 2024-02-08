@@ -1,0 +1,35 @@
+.NavItem {
+  display: grid;
+  grid-auto-flow: column;
+  margin: 0em 1em;
+  justify-content: left;
+  align-items: center;
+}
+
+.NavItemLink {
+  text-decoration: none;
+}
+.NavItemP{
+  margin:.5em;
+}
+
+.SubNavOpenIcon {
+  display: inline;
+  height: 30px;
+  text-decoration: none;
+}
+
+.DropDownNavItem {
+  display: grid;
+  grid-auto-flow: column;
+  margin: 0em 1em ;
+  justify-content: left;
+  align-items: center;
+}
+.DropDownNavItems{
+  display: grid;
+  grid-auto-flow: row;
+  margin: 0em 2em;
+  justify-content: left;
+  align-items: center;
+}
