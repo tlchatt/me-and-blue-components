@@ -58,7 +58,6 @@ export const Form = ({ section, appearance, branding }) => {
     }
   }
   if (!section) {// Set appearance.ContactForm as section if not called via a "section"
-    console.log(' if (!section)')
     section = appearance?.ContactForm ? appearance?.ContactForm : defaultSection
   }
   section.steps = section?.steps ? section?.steps : defaultSection.steps
@@ -69,7 +68,7 @@ export const Form = ({ section, appearance, branding }) => {
   const [sent, setSent] = useState(false);
   const [failed, setFailed] = useState(false);
   const [note, setNote] = useState(appearance?.ContactForm?.note);
-  console.log('note() : ', note)
+  //console.log('note() : ', note)
   let formInfo = {} //State Causes Rerender.
   const handleSending = async () => {
     console.log('handleSending = async () => {')
@@ -146,11 +145,11 @@ export const Form = ({ section, appearance, branding }) => {
     const [stepCount, setStepCount] = useState(0);
     const [step, setStep] = useState(section.steps[stepCount]);
     const handleSetStep = () => {
-      console.log(' const handleSetStep = () => {Step on run', step, '#', stepCount)
+   //   console.log(' const handleSetStep = () => {Step on run', step, '#', stepCount)
       setStepCount(stepCount + 1)
       setStep(section.steps[stepCount + 1])
     }
-    console.log(' ContactFormInner() => {Step on run', step, '#', stepCount)
+  //  console.log(' ContactFormInner() => {Step on run', step, '#', stepCount)
     let inputs = section?.[step]?.inputs ? section?.[step]?.inputs : defaultSection?.[step]?.inputs
     if (!inputs) { return (<h1>No Inputs Provided to ContactForm - ContactFormInner</h1>) }
     return (

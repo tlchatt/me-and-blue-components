@@ -6,7 +6,6 @@ import { Form } from "@/components/Form";
 import { Colors, hexToRGB } from '../../lib/colors.js'
 import { useGlobalContext } from '@/components/Context'
 export default function FooterNav({ appearance, branding }) {
-  console.log('appearance' , appearance)
   let { contactModal, handleContactModal } = useGlobalContext()
   let scheme = (appearance?.FooterNav?.scheme) ? appearance?.FooterNav?.scheme : 'primary'
   let { fgcolor, bgcolor } = Colors(appearance, scheme)
