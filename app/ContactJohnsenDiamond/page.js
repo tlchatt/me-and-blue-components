@@ -64,7 +64,3 @@ export default function Page() {
 
 
 }
-           // When one window sends a message, or data, to another window via
-          // `parent.postMessage()`, the message (the first argument) in the
-          // `parent.postMessage()` call is accessible via `event.data` here.
-          // Do something with the data.
