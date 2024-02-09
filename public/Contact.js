@@ -1,5 +1,5 @@
 (function (win) {
-console.assert('firing up Awesome Contact form Technologic https://tlchatt.com')
+console.log('firing up Awesome Contact form Technologic https://tlchatt.com')
 
     // When one window sends a message, or data, to another window via
     // `parent.postMessage()`, the message (the first argument) in the
