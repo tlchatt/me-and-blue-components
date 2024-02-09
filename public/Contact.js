@@ -1,5 +1,5 @@
 (function (win) {
-
+console.assert('firing up Awesome Contact form Technologic https://tlchatt.com')
 
     // When one window sends a message, or data, to another window via
     // `parent.postMessage()`, the message (the first argument) in the
@@ -36,9 +36,7 @@
             if (event.data.type == 'Contact_Problem') {
                 gtag('event', 'Contact_Problem');
             }
-
             console.log(event.data);
         }
-
     }
 })(window);
