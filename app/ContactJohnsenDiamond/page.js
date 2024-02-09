@@ -31,28 +31,65 @@ const appearance = {
   }
     /**
    * Implementation as component in another site.
-   * <iframe src="https://component.tlchatt.com/ContactJohnsenDiamond" style="height: 700px; width:
-      100%;border: 0;" id="technologic-contact"></iframe>
-      <script>
-
-        window.addEventListener("message", handleMessage);
-
-        function handleMessage(event) {
-          if(event.origin != 'https://appalachiananglers.com' ){
-              console.log("Received a message from " + event.origin + ".");
-            if (event.data.type == 'Contact_Submit'){
-              gtag('event', 'Contact_Submit');
-            }
-          // When one window sends a message, or data, to another window via
-          // `parent.postMessage()`, the message (the first argument) in the
-          // `parent.postMessage()` call is accessible via `event.data` here.
-          // Do something with the data.
-          console.log(event.data);
-          }
-
-        }
-      </script>
    * 
+   * <style>
+    .TechnologicClosed {
+        border: 0;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        height: auto;
+        width: auto;
+        min-width: 365px;
+        max-height: 100px;
+    }
+
+    .TechnologicOpen {
+        border: 0;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+    }
+</style>
+<iframe src="https://component.tlchatt.com/ContactJohnsenDiamond" class="TechnologicClosed" id="Technologic"></iframe>
+<script>
+    let frame = document.querySelector('#Technologic')
+    window.addEventListener("message", handleMessage);
+
+    function handleMessage(event) {
+        if (event.origin == 'https://component.tlchatt.com') {
+            console.log("Received a message from " + event.origin + ".");
+            console.log("Event a message from " + event.data + ".");
+            if (event.data.type == 'Contact_Submit') {
+                gtag('event', 'Contact_Submit');
+            }
+            if (event.data.type == 'Contact_Click_To_Call') {
+                gtag('event', 'Contact_Click_To_Call');
+            }
+            if (event.data.type == 'Contact_Problem') {
+                gtag('event', 'Contact_Problem');
+            }
+            if (event.data.type == 'handleContactModal') {
+                if (event.data.message) {
+                    frame.classList.remove("TechnologicClosed");
+                    frame.classList.add("TechnologicOpen");
+                }
+                else {
+                    frame.classList.remove("TechnologicOpen");
+                    frame.classList.add("TechnologicClosed");
+                }
+            }
+            console.log(event.data);
+        }
+
+    }
+</script>
    */
 export default function Page() {
     return (
