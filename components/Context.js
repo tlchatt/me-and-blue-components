@@ -12,32 +12,29 @@ export function GlobalContextProvider(props) {
   const [contactModal, setContactModal] = useState(false);
   function handleContactModal() {
     console.log("function handleContactModalOpen(){")
-        window.parent.postMessage(
-          {
-              type: 'handleContactModal',
-              message: true,
-          }, '*'
-      )
-    }
+    window.parent.postMessage(
+      {
+        type: 'handleContactModal',
+        message: true,
+      }, '*'
+    )
     setContactModal(!contactModal)
   }
   function handleContactModalE(e) {
     e.preventDefault()
     window.parent.postMessage(
       {
-          type: 'handleContactModalE(e)',
+          type: 'handleContactModal',
           message: true,
       }, '*'
   )
-}
-    console.log("function handleContactModalOpen(){")
     setContactModal(!contactModal)
   }
   const value = {
-    contactModal: { 
-      'state': contactModal, 
-      'handler': handleContactModal, 
-      'handlerE':handleContactModalE
+    contactModal: {
+      'state': contactModal,
+      'handler': handleContactModal,
+      'handlerE': handleContactModalE
     }
   }
   return (
@@ -55,10 +52,10 @@ export function useGlobalContext() {
   const context = useContext(GlobalContext);
   let contactModal = context.contactModal.state
   let handleContactModal = context.contactModal.handler
-  let handleContactModalE  = context.contactModal.handlerE
+  let handleContactModalE = context.contactModal.handlerE
   return {
     contactModal: contactModal,
     handleContactModal: handleContactModal,
-    handleContactModalE:handleContactModalE
+    handleContactModalE: handleContactModalE
   }
 }
