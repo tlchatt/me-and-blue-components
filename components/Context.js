@@ -12,25 +12,25 @@ export function GlobalContextProvider(props) {
   const [contactModal, setContactModal] = useState(false);
   function handleContactModal() {
     console.log("function handleContactModalOpen(){")
-
-    setContactModal(!contactModal)
     window.parent.postMessage(
       {
         type: 'handleContactModal',
-        message: contactModal,
+        message: !contactModal,
       }, '*'
     )
+    setContactModal(!contactModal)
   }
   function handleContactModalE(e) {
     e.preventDefault()
-    setContactModal(!contactModal)
+
+    console.log("function handleContactModalOpen(){")
     window.parent.postMessage(
       {
-          type: 'handleContactModal',
-          message: contactModal,
+        type: 'handleContactModal',
+        message: !contactModal,
       }, '*'
-  )
-
+    )
+    setContactModal(!contactModal)
   }
   const value = {
     contactModal: {
