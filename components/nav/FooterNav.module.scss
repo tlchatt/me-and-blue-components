@@ -36,11 +36,8 @@
 .SVG {
   justify-self: center;
   height: 32px !important;
-  @media (min-width: 600px) {
-    height: 32px !important;
-  }
+  width:32px!important;
   border-radius: 50%;
-
 }
 .contactToolBar {
   position: fixed !important;

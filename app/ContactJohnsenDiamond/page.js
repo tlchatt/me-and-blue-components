@@ -31,7 +31,7 @@ const appearance = {
   }
     /**
    * Implementation as component in another site.
-   * <iframe src="https://component.tlchatt.com/ContactFormAppAnglers" style="height: 700px; width:
+   * <iframe src="https://component.tlchatt.com/ContactJohnsenDiamond" style="height: 700px; width:
       100%;border: 0;" id="technologic-contact"></iframe>
       <script>
 
