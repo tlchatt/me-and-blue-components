@@ -22,7 +22,7 @@ const branding = {
   "Settings": {
     "Fax": "",
     "Url": "https://component.tlchatt.com/",//for email sending leave as is
-    "Email": "kathryn@kyattkinglaw.com ",
+    "Email": "kathryn@kyattkinglaw.com",
     "Phone":"(205) 218-9337",
     "SiteTitle": "Kathryn Kyatt King Attorney at Law",
     "ContactButtonText": "Send Message",
