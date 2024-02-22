@@ -133,7 +133,7 @@ export const Form = ({ section, appearance, branding }) => {
   /**Section Color, Class, Styles, SVGs, Registartion */
   
   return (
-    <div style={Style} id='ContactForm'>
+    <div style={Style} id='ContactForm'  className={styles.ContactForm}>
       {section.title &&
         <H3 scheme={scheme} content={section.title} appearance={appearance} />
       }
@@ -153,7 +153,7 @@ export const Form = ({ section, appearance, branding }) => {
     let inputs = section?.[step]?.inputs ? section?.[step]?.inputs : defaultSection?.[step]?.inputs
     if (!inputs) { return (<h1>No Inputs Provided to ContactForm - ContactFormInner</h1>) }
     return (
-      <div className={styles.ContactForm} id="Contact" >
+      <div  id="Contact" >
         {contactModal &&
           <div className={styles.CloseDiv} onClick={handleContactModal}>
             <Close ClassName={`${styles.SVG} ${styles.SVGClose}`} Style={Style} />
