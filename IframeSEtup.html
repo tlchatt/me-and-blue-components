@@ -1,14 +1,12 @@
 <style>
     .TechnologicClosed {
-        border: 0;
-        position: fixed;
         bottom: 0;
-        right: 0;
-        z-index: 1;
-        height: auto;
-        width: auto;
+        position: fixed;
+        max-width: 1536px;
+        z-index: 1100;
         min-width: 365px;
         max-height: 100px;
+        border: 0;
     }
 
     .TechnologicOpen {
@@ -22,8 +20,19 @@
         height: 100%;
         width: 100%;
     }
+
+    .Wrapper {
+        max-width: 1836px;
+        margin: 0 auto;
+        display: grid;
+        justify-items: end;
+
+    }
 </style>
-<iframe src="https://component.tlchatt.com/ContactJohnsenDiamond" class="TechnologicClosed" id="Technologic"></iframe>
+<div class="Wrapper">
+    <iframe src="https://component.tlchatt.com/PersistentContactJohnsenDiamond" class="TechnologicClosed"
+        id="Technologic"></iframe>
+</div>
 <script>
     let frame = document.querySelector('#Technologic')
     window.addEventListener("message", handleMessage);
