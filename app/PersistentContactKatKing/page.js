@@ -49,7 +49,7 @@ const branding = {
         bottom: 0;
         right: 0;
         left: 0;
-        z-index: 1;
+        z-index: 9999;
         height: 100%;
         width: 100%;
     }
@@ -69,7 +69,6 @@ const branding = {
 <script>
     let frame = document.querySelector('#Technologic')
     window.addEventListener("message", handleMessage);
-
     function handleMessage(event) {
         if (event.origin == 'https://component.tlchatt.com') {
             console.log("Received a message from " + event.origin + ".");

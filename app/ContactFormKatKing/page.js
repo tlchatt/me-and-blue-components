@@ -32,16 +32,7 @@ const branding = {
 let contactSection = {
   "type": "contact-form",
   "scheme": "primary",
-  "info": {
-      "link": {
-          "p": "Get Help",
-          "href": "https://tlchatt.com/web-development/micro-services/analytics-install-service"
-      },
-      "image": "/images/CumberlandLandSpecialistsLogo.webp",
-      "title": "Land Specialist Consultation",
-      "length": "15 min",
-      "description": "Schedule a time for a phone call or a digital meeting with one of our land specialists, to discuss your land and real estate needs and goals. Lets find out if we make a good team, and see how we can help you."
-  },
+  "title":"Start Protecting Your Future",
   "steps": [
 
       "contact_info_form"
@@ -79,27 +70,29 @@ let contactSection = {
 }
   /**
    * Implementation as component in another site.
-   * <iframe src="https://component.tlchatt.com/ContactFormAppAnglers" style="height: 700px; width:
+   * <iframe src="https://component.tlchatt.com/ContactFormKatKing" style="height: 450px; width:
       100%;border: 0;" id="technologic-contact"></iframe>
       <script>
 
         window.addEventListener("message", handleMessage);
-
-        function handleMessage(event) {
-          if(event.origin != 'https://appalachiananglers.com' ){
-              console.log("Received a message from " + event.origin + ".");
-            if (event.data.type == 'Contact_Submit'){
-              gtag('event', 'Contact_Submit');
+    function handleMessage(event) {
+        if (event.origin == 'https://component.tlchatt.com') {
+            console.log("Received a message from " + event.origin + ".");
+            console.log("Event a message from " + event.data + ".");
+            if (event.data.type == 'Contact_Submit') {
+                gtag('event', 'Contact_Submit');
             }
-          // When one window sends a message, or data, to another window via
-          // `parent.postMessage()`, the message (the first argument) in the
-          // `parent.postMessage()` call is accessible via `event.data` here.
-          // Do something with the data.
-          console.log(event.data);
-          }
-
+            if (event.data.type == 'Contact_Click_To_Call') {
+                gtag('event', 'Contact_Click_To_Call');
+            }
+            if (event.data.type == 'Contact_Problem') {
+                gtag('event', 'Contact_Problem');
+            }
+            console.log(event.data);
         }
+
       </script>
+      	<?php echo do_shortcode($service_form_shortcode); ?>
    * 
    */
 export default function Page() {
