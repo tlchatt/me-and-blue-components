@@ -3,7 +3,7 @@ import { GlobalContextProvider } from '@/components/Context';
 import FooterNav from "@/components/nav/FooterNav"
 const appearance = {
   "colorSchemes": {
-    "PrimaryBackground": "#333",
+    "PrimaryBackground": "#840f39",
     "PrimaryForeground": "#fff",
   },
   "LinkStyle": {
