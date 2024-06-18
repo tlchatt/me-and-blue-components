@@ -13,7 +13,7 @@ let {fgcolor,bgcolor} = Colors( appearance, appearance?.SocialNav?.scheme)
     top: '0',
     left:'auto',
     width: '100%',
-    maxWidth: isHighRes ? '1536px' : 'calc(100% - 300px)',
+    maxWidth: isHighRes ? '1920px' : 'calc(100% - 300px)',
     zIndex: '1100',
     backgroundColor: bgcolor,
     color: fgcolor,

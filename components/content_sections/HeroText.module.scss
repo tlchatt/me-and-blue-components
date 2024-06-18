@@ -6,7 +6,7 @@
         width: 90%;
         margin-bottom: 1rem;
         place-items: center;
-        @media (min-width: 1200px) {
+        @media (min-width: 1536px) {
           padding: 16px 8px;
             width: 60%;
           }
@@ -18,7 +18,7 @@
       font-weight: 700!important;
       font-size: 22px!important;
       line-height: 22px!important;
-      @media (min-width: 600px) {
+      @media (min-width: 640px) {
         margin: 8px 16px;
         justify-self: center;
       }
@@ -31,7 +31,7 @@
       font-size: 20px!important;
       line-height: 20px!important;
       
-      @media (min-width: 600px) {
+      @media (min-width: 640px) {
         justify-self: center;
         margin: 8px 16px;
 

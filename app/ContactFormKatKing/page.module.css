@@ -25,7 +25,7 @@
 .SVG {
     justify-self: center;
     height: 28px !important;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         height: 32px !important;
     }
     border-radius: 50%;
@@ -92,7 +92,7 @@
     outline: unset;
     font-size: 18px;
     line-Height: 27px;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         font-size: 20px;
         line-Height: 28px
     }
@@ -113,7 +113,7 @@
     outline: unset;
     font-size: 18px;
     line-Height: 30px;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         font-size: 20px;
         line-Height: 32px
     }

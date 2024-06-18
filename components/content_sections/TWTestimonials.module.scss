@@ -9,10 +9,10 @@
     align-items: center;
     justify-items: stretch;
     padding: 0px 16px 8px 16px;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         padding: 0px 32px 16px 32px;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 1536px) {
         padding: 0px 64px 32px 64px;
     }
 }   
@@ -21,18 +21,18 @@
     justify-items:center;
     align-items:center;
     margin: 16px 24px 0 24px !important;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         margin:  32px 32px 0 32px !important;
     }
 }
 .Content{
     margin: 32px;
     margin: 16px 24px 0 24px !important;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         margin:  32px 32px 0 32px !important;
     }
     grid-template-rows: 2fr 1fr;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         grid-template-rows: unset;
         grid-template-columns:65% 35%;
     };
@@ -49,10 +49,10 @@
     align-items: center;
     justify-items: stretch;
     padding:8px;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
       padding: 16px;
     };
-    @media (min-width: 1200px) {
+    @media (min-width: 1536px) {
       padding:32px;
     };
 }
@@ -62,7 +62,7 @@
     font-size: 28px!important;
     line-height: 42px!important;
     letter-spacing: 0.25px;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         font-size: 32px!important;
         line-height: 48px!important;
     };
@@ -74,7 +74,7 @@
     font-size: 25px!important;
     line-height: 37.5px!important;
     letter-spacing: 0.25px;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         font-size: 30px!important;
         line-height: 45px!important;
     };

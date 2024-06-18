@@ -1,10 +1,10 @@
 .card {
     height: 100%;
     padding: 16px;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
       padding: 16px 16px;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 1536px) {
         padding: 32px 32px;
     }
   }
@@ -12,7 +12,7 @@
   .mobile{
     height: 42rem;
     position:relative;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         display: none;
     }
   }
@@ -20,7 +20,7 @@
     height: 24rem;
     position:relative;
     display: none;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
       display: block;
     }
   }

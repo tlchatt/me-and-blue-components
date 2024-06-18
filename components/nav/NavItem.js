@@ -8,7 +8,7 @@ export default function NavItem({ item, navEntries, subNavEntries, branding, app
     const handleClick = () => {
         setOpen(!open);
     };
-          const isSmall = useMediaQuery('(min-width: 600px)');
+          const isSmall = useMediaQuery('(min-width: 640px)');
     let { handleContactModalE } = useGlobalContext()
     //console.log('item?.json?.Settings?.type ', item)
     if (item.subNavEntries.length > 0) {
@@ -28,7 +28,7 @@ export default function NavItem({ item, navEntries, subNavEntries, branding, app
         )
     }
     function NavItemLink({ item }) { // All Values From Page Url and NavTitle No Subnavs
-        const isSmall = useMediaQuery('(min-width: 600px)');
+        const isSmall = useMediaQuery('(min-width: 640px)');
         function onClick(e) {
             console.log(item)
             if(!isSmall){

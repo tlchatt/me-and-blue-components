@@ -35,7 +35,7 @@ const branding = {
     .TechnologicClosed {
         bottom: 0;
         position: fixed;
-        max-width: 1536px;
+        max-width: 1920px;
         z-index: 1100;
         min-width: 365px;
         max-height: 100px;

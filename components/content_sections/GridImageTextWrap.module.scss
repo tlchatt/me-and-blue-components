@@ -1,18 +1,18 @@
 /*
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         xs; extra-small: 0px
-        sm; small: 600px
-        md; medium: 900px
-        lg; large: 1200px
-        xl; extra-large: 1536px
+        sm; small: 640px
+        md; medium: 1024px
+        lg; large: 1536px
+        xl; extra-large: 1920px
     */
 .GridImageTextWrap{
     padding: 16px;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         padding: 32px 32px 16px 32px;
         margin: 32px;
     }
-    @media (min-width: 900px) {
+    @media (min-width: 1024px) {
         padding: 64px 64px 32px 64px;
         margin: 64px;
     }
@@ -26,19 +26,19 @@
  
     margin: -4px;
     padding: 16px;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 .ImageItem{
     order:1;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         order:unset;
     }
 }
 .TextItem{
     order:2;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         order:unset;
     }
     display:grid;
@@ -51,7 +51,7 @@
     letter-spacing: 0.25px;
     //color:textColor,
     margin: 1rem!important;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         margin: 2rem 1rem 1rem 1rem;
         padding:0.5rem 0;
     }

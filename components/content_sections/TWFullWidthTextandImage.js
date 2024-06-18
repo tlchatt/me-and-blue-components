@@ -105,7 +105,7 @@ export const TWFullWidthTextandImage = ({ section, appearance }) => {
 
     }
     function ImageSide({ section, appearance }) {
-        const isSmall = useMediaQuery('(min-width: 600px)');
+        const isSmall = useMediaQuery('(min-width: 640px)');
         var imageMobileHeight = section?.imageMobileHeight ? section?.imageMobileHeight : '16rem'
         var style = {
             height: (isSmall) ? 'unset' : imageMobileHeight

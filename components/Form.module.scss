@@ -31,7 +31,7 @@
     justify-self: center;
     height: 28px !important;
 
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         height: 32px !important;
     }
 
@@ -111,7 +111,7 @@
     font-size: 18px;
     line-Height: 27px;
 
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         font-size: 20px;
         line-Height: 28px
     }
@@ -135,7 +135,7 @@
     font-size: 18px;
     line-Height: 25px;
 
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         font-size: 20px;
         line-Height: 28px
     }
@@ -156,7 +156,7 @@
     line-Height: 27px;
     float: right;
 
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         height: 20px;
         width: 20px;
         min-width: 0;

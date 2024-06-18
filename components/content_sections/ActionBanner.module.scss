@@ -2,11 +2,11 @@
     display:grid!important;
     grid-template-columns:80% 20%!important;
     margin: 16px 0!important;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
       grid-template-columns:90% 10%!important;
         margin: 32px 0!important;
     }
-    @media (min-width: 900px) {
+    @media (min-width: 1024px) {
         margin: 64px 0!important;
     }
   }

@@ -1,16 +1,16 @@
 /*
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         xs; extra-small: 0px
-        sm; small: 600px
-        md; medium: 900px
-        lg; large: 1200px
-        xl; extra-large: 1536px
+        sm; small: 640px
+        md; medium: 1024px
+        lg; large: 1536px
+        xl; extra-large: 1920px
     */
 .MiniNavChips {
     width: 100%;
     margin:0;
     padding:16px;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         padding:32px;
     }
 

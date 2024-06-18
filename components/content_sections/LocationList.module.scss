@@ -8,10 +8,10 @@
   align-items: center;
   justify-items: stretch;
   padding: 8px 16px;
-  @media (min-width: 600px) {
+  @media (min-width: 640px) {
       padding: 16px 32px;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1536px) {
       padding: 32px 64px;
   }
 }
@@ -19,7 +19,7 @@
       margin: 32px;
       display:grid;
       grid-template-rows: auto;
-      @media (min-width: 600px) {
+      @media (min-width: 640px) {
         grid-template-rows: unset;
         grid-template-columns: 50% 50%;
       }
@@ -57,7 +57,7 @@
       justify-self: center;
       height: 28px !important;
 
-      @media (min-width: 600px) {
+      @media (min-width: 640px) {
         height: 32px !important;
       }
 

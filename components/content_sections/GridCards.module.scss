@@ -1,7 +1,7 @@
 .GridCards{
     display:grid;
     grid-template-columns:repeat(1,minmax(0,1fr));
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         grid-template-columns:repeat(3,minmax(0,1fr));
     }
     gap: 1.5rem;
@@ -17,11 +17,11 @@
     font-size:.75em;
     
     padding: 8px 16px;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
        //     padding: 16px 32px;
         grid-template-rows: 2.85fr 7fr
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 1536px) {
        //    padding: 32px 64px;
     }
   }

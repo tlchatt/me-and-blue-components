@@ -39,10 +39,10 @@ export const Component = ({ section, appearance, branding }) => {
     const handleStateE = async (e) => {
 
     };
-    const isSmall = useMediaQuery('(min-width: 600px)');
-    const isMedium = useMediaQuery('(min-width: 900px)');
-    const isLarge = useMediaQuery('(min-width: 1200px)');
-    const isXLarge = useMediaQuery('(min-width: 1536px)');
+    const isSmall = useMediaQuery('(min-width: 640px)');
+    const isMedium = useMediaQuery('(min-width: 1024px)');
+    const isLarge = useMediaQuery('(min-width: 1536px)');
+    const isXLarge = useMediaQuery('(min-width: 1920px)');
 /**Variables, States, Handlers, Hooks Registartion */
 
 /**Section Color, Class, Styles, SVGs, Registartion */

@@ -16,10 +16,10 @@ export const FullWidthImage = ({ section, appearance }) => {
      * Different math for common aspect rations, landscape (2:3 calculated below)comes in as ratio prop portrait, and square needed
      */
     let { bgcolor } = Colors(appearance, section.scheme)
-    const isSmall = useMediaQuery('(min-width: 600px)');
-    const isMedium = useMediaQuery('(min-width: 900px)');
-    const isLarge = useMediaQuery('(min-width: 1200px)');
-    const isXLarge = useMediaQuery('(min-width: 1536px)');
+    const isSmall = useMediaQuery('(min-width: 640px)');
+    const isMedium = useMediaQuery('(min-width: 1024px)');
+    const isLarge = useMediaQuery('(min-width: 1536px)');
+    const isXLarge = useMediaQuery('(min-width: 1920px)');
     var height = section.height ? section.height : '250px'  
     var smHeight = section.smHeight ? section.smHeight : section.height ? section.height : '400px'
     var mdHeight = section.mdHeight ? section.mdHeight : section.smHeight ? section.smHeight : section.height ? section.height : '400px'

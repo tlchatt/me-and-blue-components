@@ -372,10 +372,10 @@ export const YTEMBED = ({ section }) => {
     )
 }
 export const Img = ({ item, content, alt, classNames, style, scheme, branding }) => {
-    const isSmall = useMediaQuery('(min-width: 600px)');
-    const isMedium = useMediaQuery('(min-width: 900px)');
-    const isLarge = useMediaQuery('(min-width: 1200px)');
-    const isXLarge = useMediaQuery('(min-width: 1536px)');
+    const isSmall = useMediaQuery('(min-width: 640px)');
+    const isMedium = useMediaQuery('(min-width: 1024px)');
+    const isLarge = useMediaQuery('(min-width: 1536px)');
+    const isXLarge = useMediaQuery('(min-width: 1920px)');
     if (!content) {
         return (<H1 style="color:red;"> Missing Img Content</H1>)
     }
@@ -389,7 +389,7 @@ export const Img = ({ item, content, alt, classNames, style, scheme, branding })
      * Different math for common aspect rations, landscape (2:3 calculated below)comes in as ratio prop portrait, and square needed
      */
 
-    var height = item.height ? item.height : '250px' //Image width (318px - 540px) 429 midpoint 286px for 2/3 adjsuted lower because most phones favor a littler farther from 600px.    
+    var height = item.height ? item.height : '250px' //Image width (318px - 540px) 429 midpoint 286px for 2/3 adjsuted lower because most phones favor a littler farther from 640px.    
     var smHeight = item.smHeight ? item.smHeight : item.height ? item.height : '400px' //Image width (480px - 720px) 600 midpoint
     var mdHeight = item.mdHeight ? item.mdHeight : item.smHeight ? item.smHeight : item.height ? item.height : '400px' //Image width (480px - 720px) 600 midpoint
     var lgHeight = item.lgHeight ? item.lgHeight : item.mdHeight ? item.mdHeight : item.smHeight ? item.smHeight : item.height ? item.height : '428px' //Image width (540px - 742px) 641 midpoint

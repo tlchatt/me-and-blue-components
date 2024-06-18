@@ -23,7 +23,7 @@ export default function FooterNav({ appearance, branding }) {
     justifySelf: 'end',
     bottom: '0',
     position: 'fixed',
-    maxWidth: '1536px',
+    maxWidth: '1920px',
     width: '100%',
     display: 'grid',
     zIndex: '1100'

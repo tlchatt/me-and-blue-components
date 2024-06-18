@@ -7,16 +7,16 @@
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      @media (min-width: 600px) {
+      @media (min-width: 640px) {
         height: 325px;
       }
-      @media (min-width: 900px) {
+      @media (min-width: 1024px) {
         height: 375px;
       }
-      @media (min-width: 1200px) {
+      @media (min-width: 1536px) {
         height: 425px;
       }
-      @media (min-width: 1536px) {
+      @media (min-width: 1920px) {
         height: 500px; 
       }            
     }

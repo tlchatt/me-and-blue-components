@@ -1,11 +1,11 @@
 
     /*
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         xs; extra-small: 0px
-        sm; small: 600px
-        md; medium: 900px
-        lg; large: 1200px
-        xl; extra-large: 1536px
+        sm; small: 640px
+        md; medium: 1024px
+        lg; large: 1536px
+        xl; extra-large: 1920px
     */
 
     .blogRoll {
@@ -19,10 +19,10 @@
         align-items: center;
         justify-items: stretch;
         padding: 8px 16px;
-        @media (min-width: 600px) {
+        @media (min-width: 640px) {
             padding: 16px 32px;
         }
-        @media (min-width: 1200px) {
+        @media (min-width: 1536px) {
             padding: 32px 64px;
         }
     }
@@ -53,10 +53,10 @@
         align-items: center;
         justify-items: stretch;
         padding: 0px 16px 8px 16px;
-        @media (min-width: 600px) {
+        @media (min-width: 640px) {
             padding: 0px 32px 16px 32px;
         }
-        @media (min-width: 1200px) {
+        @media (min-width: 1536px) {
             padding: 0px 64px 32px 64px;
         }
     }

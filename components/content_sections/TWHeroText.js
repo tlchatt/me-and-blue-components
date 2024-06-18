@@ -16,7 +16,7 @@ export const HeroText = ({ section, appearance}) => {
 */
 console.log(' HeroText = ({section}', section, '{appearance}', appearance)
     let { fgcolor, bgcolor } = Colors(appearance, section.scheme)
-    const isSmall = useMediaQuery('(min-width: 600px)');
+    const isSmall = useMediaQuery('(min-width: 640px)');
     var HeroImageInnerStyle = {
       backgroundColor: hexToRGB(bgcolor, .75)
     }

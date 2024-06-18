@@ -8,7 +8,7 @@
     padding-right: 16px;
     min-height: 56px;
 
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         padding-left: 24px;
         padding-right: 24px;
         min-height: 99px;
@@ -23,7 +23,7 @@
 
 .socialAppBar {
     display: none;
-    @media (min-width: 900px) {
+    @media (min-width: 1024px) {
         display: block;
     }
 
@@ -32,7 +32,7 @@
 .SVG {
     justify-self: center;
     height: 32px !important;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         height: 32px !important;
     }
     border-radius: 50%;

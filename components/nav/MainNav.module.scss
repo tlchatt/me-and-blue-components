@@ -1,5 +1,5 @@
 .drawer {
-    @media (min-width: 900px) {
+    @media (min-width: 1024px) {
      
     }
 }
@@ -109,7 +109,7 @@ place-items: center;
     left: 0;
     right: auto;
     bottom: 0;
-    @media (min-width: 900px) {
+    @media (min-width: 1024px) {
         display: block;
     }
     z-index: -1;
@@ -131,7 +131,7 @@ place-items: center;
     height: 100%;
     right: auto;
     bottom: 0;
-    @media (min-width: 900px) {
+    @media (min-width: 1024px) {
         display: flex;
     }
     display:none;
@@ -210,7 +210,7 @@ place-items: center;
     padding-left: 16px;
     padding-right: 16px;
     min-height: 56px;
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         padding-left: 24px;
         padding-right: 24px;
         min-height: 64px;
@@ -220,7 +220,7 @@ place-items: center;
 .mobileMenuAppBar {
     display: unset;
 
-    @media (min-width: 900px) {
+    @media (min-width: 1024px) {
         display: none;
         width: calc(100% - 300px);
         margin-left: 300px; //Right here
@@ -252,7 +252,7 @@ place-items: center;
     justify-self: center;
     height: 45px !important;
 
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         height: 55px !important;
     }
 

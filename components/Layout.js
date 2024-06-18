@@ -101,8 +101,8 @@ export const ContentLayout = ({ page, appearance, branding, blogRoll, allPages }
     diplay: 'none'
   }
   const isHighRes = useMediaQuery('(min-width: 1836px)');
-  const isLarge = useMediaQuery('(min-width: 1200px)');
-  const isMedium = useMediaQuery('(min-width: 900px)');
+  const isLarge = useMediaQuery('(min-width: 1536px)');
+  const isMedium = useMediaQuery('(min-width: 1024px)');
   let ContentLayoutStyle = {
     marginTop: branding?.Settings?.Logo?.Height ? branding?.Settings?.Logo?.Height : '100px',
     display: 'grid',
@@ -111,7 +111,7 @@ export const ContentLayout = ({ page, appearance, branding, blogRoll, allPages }
   let ContentSectionStyle = {
     justifySelf: 'end',
     padding: isLarge ? '64px' : '32px',
-    maxWidth: isHighRes ? '1536px' :  isMedium ? 'calc(100% - 300px)' : '100%',
+    maxWidth: isHighRes ? '1920px' :  isMedium ? 'calc(100% - 300px)' : '100%',
     width: '100%',
   }
   let BigPaperStyle = {
@@ -167,11 +167,11 @@ export const ContentLayout = ({ page, appearance, branding, blogRoll, allPages }
 }
 export const HeroSection = ({ section, appearance, branding }) => {
   const isHighRes = useMediaQuery('(min-width: 1836px)');
-  const isMedium = useMediaQuery('(min-width: 900px)');
+  const isMedium = useMediaQuery('(min-width: 1024px)');
   let HeroSectionStyle = {
     justifySelf: 'end',
     width: '100%',
-    maxWidth: isHighRes ? '1536px' :  isMedium ? 'calc(100% - 300px)' : '100%'
+    maxWidth: isHighRes ? '1920px' :  isMedium ? 'calc(100% - 300px)' : '100%'
   }
 
   return (

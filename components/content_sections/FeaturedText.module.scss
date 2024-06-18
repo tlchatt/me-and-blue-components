@@ -4,7 +4,7 @@
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      @media (min-width: 600px) {
+      @media (min-width: 640px) {
         width:75%
       }
     }
@@ -12,10 +12,10 @@
         display: grid;
         align-content: center;
         padding: 8px 16px;
-        @media (min-width: 600px) {
+        @media (min-width: 640px) {
             padding: 16px 32px;
         }
-        @media (min-width: 1200px) {
+        @media (min-width: 1536px) {
             padding: 32px 64px;
         }
     }
@@ -29,7 +29,7 @@
         letter-spacing:.75px;
         text-align:left;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-        @media (min-width: 600px) {
+        @media (min-width: 640px) {
             font-size: 46px;
             line-height: 55px;
             flex-basis: 60%;
@@ -44,7 +44,7 @@
      // color: textColor ISSUE
         font-size: 28px;
         line-Height: 34px;
-      @media (min-width: 600px) {
+      @media (min-width: 640px) {
         font-size: 30px;
         line-height: 36px;
         //margin:16px 64px 0 64px;
@@ -55,7 +55,7 @@
     .button {
       float: left;
       width:70%;
-      @media (min-width: 600px) {
+      @media (min-width: 640px) {
             width:50%;
      }   
       display: block;
@@ -63,7 +63,7 @@
      // font-weight:700;
       text-align:left;
      // margin:8px 32px 0 32px;
-      @media (min-width: 600px) {
+      @media (min-width: 640px) {
         //  font-size: 1.5em;
       //    margin:16px 64px 0 64px;
       }

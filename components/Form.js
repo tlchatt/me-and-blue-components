@@ -325,7 +325,7 @@ export const Form = ({ section, appearance, branding }) => {
           let timeSlot = getTimeinUserTZ(selectedDate, timeZone, [time.hour, time.minute])
           let localTimeString = timeSlot.toLocaleTimeString()
 
-          const isSmall = useMediaQuery('(min-width: 600px)');
+          const isSmall = useMediaQuery('(min-width: 640px)');
 
           var ButtonStyle = {
             padding: '7px 0 7px 0',
