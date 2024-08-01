@@ -22,7 +22,7 @@ const branding = {
     "Fax": "",
     "Url": "https://component.tlchatt.com/",//for email sending leave as is
     "Email": "lydia@thriveculturecoaching.com",
-    "Phone":"(423) 207-3425",
+    "Phone": "(423) 207-3425",
     "SiteTitle": "Thrive Culture Coaching",
     "ContactButtonText": "Send Message",
     "CallButtonText": "Call Now",
@@ -30,8 +30,7 @@ const branding = {
 }
 /**
 * Implementation as component in another site.
-* 
-<style>
+* <style>
     .TechnologicClosed {
         bottom: 0;
         position: fixed;
@@ -59,7 +58,8 @@ const branding = {
         margin: 0 auto;
         display: grid;
         justify-items: end;
-
+        width: 100%;
+        position: absolute;
     }
 </style>
 <div class="Wrapper">
