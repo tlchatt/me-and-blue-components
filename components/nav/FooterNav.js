@@ -26,7 +26,7 @@ export default function FooterNav({ appearance, branding }) {
     maxWidth: '1920px',
     width: '100%',
     display: 'grid',
-    placeItems: center,
+    placeItems: 'center',
     zIndex: '1100'
   }
   const ContactToolBarStyle = {
